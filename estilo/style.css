@@ -7,12 +7,58 @@
     color: white;
 }
 
-header{
+html{
+    background-color: pink;
+}
+
+header {
     background-color: rgba(0, 0, 0, 0.493);
 }
-main{
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+header #logo {
+    padding: 10px;
+}
+
+header img#logo {
+    width: 100px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* main{
     background-image: url(../imagens/showcase.webp);
 }
 footer{
     background-color: black;
-}
+} */
