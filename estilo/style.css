@@ -7,20 +7,19 @@
     color: white;
 }
 
-html{
-    background-color: pink;
-}
-
 header {
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    height: auto;
+    width: 100%;
 }
 
 #container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
     margin: auto;
+    width: 60%;
 }
 
 header #logo {
@@ -37,7 +36,6 @@ header nav ul {
 }
 
 header nav ul li {
-    text-decoration: none;
     padding: 10px;
 }
 
@@ -45,20 +43,71 @@ header nav ul li a {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* main{
+main{
     background-image: url(../imagens/showcase.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
 }
+
+#fundopreto{
+    background-color: rgba(0, 0, 0, 0.459);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1 {
+    font-size: 3.5em;
+    padding: 5px;
+}
+
+main p{
+    font-size: 0.8em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+main input {
+    padding: 10px 40px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #20B955;
+}
+
+/* ---------------------------------------------------------------------------- */
 footer{
     background-color: black;
-} */
+    color: white;
+    padding: 50px;
+}
+
+#rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+}
+
+footer #logo2 {
+    padding: 10px;
+}
+
+footer img#logo2 {
+    height: 40px;
+}
+
+ul#lista {
+    column-count: 3;
+}
+
+.titulo, li{
+    list-style-type: none;
+}
+
+.titulo {
+    color: gray;
+}
