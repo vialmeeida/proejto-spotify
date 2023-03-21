@@ -53,7 +53,7 @@ main{
 #fundopreto{
     background-color: rgba(0, 0, 0, 0.459);
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,36 +78,32 @@ main input {
 }
 
 /* ---------------------------------------------------------------------------- */
+
 footer{
     background-color: black;
     color: white;
+    font-size: 0.8em;
     padding: 50px;
 }
 
 #rodape {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin: auto;
     width: 60%;
 }
 
-footer #logo2 {
-    padding: 10px;
-}
-
 footer img#logo2 {
-    height: 40px;
+    height: 30px;
 }
 
-ul#lista {
-    column-count: 3;
-}
-
-.titulo, li{
+li{
     list-style-type: none;
+    padding: 5px;
 }
 
-.titulo {
-    color: gray;
+footer p {
+    color: rgb(99, 98, 98);
+    padding: 5px;
 }
