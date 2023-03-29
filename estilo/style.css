@@ -8,23 +8,36 @@
     color: white;
 }
 
-/* Ele colocou uma tag body e definu a font familiy Roboto */
+/* Ele colocou uma tag body e definiu a font familiy Roboto */
+
+
+/* No navbar ele tem uma div container que tem dois elementos:
+
+- Imagem do spotify 
+- Lista
+
+*/
 
 header {
-    /* ele acrescentou um display flex aqui. Os elementos vao ser a img e o nav, entao eles ficariam lado a lado*/
+/* Ele coloca no navbar:
+
+display: flex; para que eles fiquem lado a lado
+color:white; para tudo ficar branco 
+justify-content:center; porque assim ele deixa a caixa da div navbar no meio*/
     background-color: rgba(0, 0, 0, 0.808); /*ok*/
-    /* colocou um justify content center */
-    position: fixed; /*nao colocou*/
+    position: fixed; /*ok*/
     height: auto; /*nao colocou*/
-    width: 100%; /*nao colocou*/
+    width: 100%; /*ok*/
+    /* colocou um top: 0 */
 }
 
 #container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 60%; /*ok*/
+    display: flex; /*ok*/
+    align-items: center; /*ok*/
+    justify-content: space-between; /*ok*/
+    /* Aqui ele colocou um padding de 20px, 0 */
     margin: auto;
-    width: 60%;
 }
 
 header #logo {
@@ -32,42 +45,71 @@ header #logo {
 }
 
 header img#logo {
+    /* Aqui no logo ele deu uma altura especifica (40px) para a imagem e deixou a largura auto para se adaptar */
     width: 100px;
 }
 
 header nav ul {
-    list-style-type: none;
-    display: flex;
+    display: flex; /*ok*/
+    list-style-type: none; /*ok*/
+    /* colocou um font weight bold */
 }
 
 header nav ul li {
+    /* ele so quis padding dos lados porque ele colocou um padding no navbar container, entao foi 0, 20px */
     padding: 10px;
 }
 
-header nav ul li a {
-    text-decoration: none;
+/* Colocando o tracinho que divide o navbar 
+
+#navbar .navbar-container ul li:nth-child(3){
+    border-right: 1px solid white;
 }
 
-header nav ul li a:hover{
+selecionou a 3 li e colcoou uma bordinha na direita dela 
+*/
+
+header nav ul li:hover{
     color: #20B955;
 }
 
+
+
+/* -------------------------- MAIN------------------------------------*/  
 main{
     background-image: url(../imagens/showcase.webp);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*nao necessario*/
     background-size: cover;
+    /* background-position: center center;
+    ele colcou aqui o backgroud color preto com 0.6 de opacidade 
+    e ainda colocou o backgroud blend mode: color */
     padding-top: 50px;
+    
+    /* teste */
+    /* background-color: rgba(0, 0, 0, 0.603); */
+    /* background-blend-mode: color; */
+
+    /* Aqui ele usou:
+    display flex
+    justify content center
+    align itens center
+    height: 100vh; para que o usuario veja 100% da tela 
+    color white*/
 }
 
 #fundopreto{
+    display: flex; /*ok*/
+    flex-direction: column; /*ok*/
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.459);
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
+    
+    
+    
+    
 main h1 {
     font-size: 3.5em;
     padding: 5px;
