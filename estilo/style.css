@@ -1,17 +1,22 @@
 @charset "UTF-8";
 
 *{
+    /* Ele adicionou um box sizing porque ele junta o padding e a margin junto com a altura ou largura e ai conta tudo de uma vez dentro daquilo que vc ja configurou */
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
+/* Ele colocou uma tag body e definu a font familiy Roboto */
+
 header {
-    background-color: rgba(0, 0, 0, 0.808);
-    position: fixed;
-    height: auto;
-    width: 100%;
+    /* ele acrescentou um display flex aqui. Os elementos vao ser a img e o nav, entao eles ficariam lado a lado*/
+    background-color: rgba(0, 0, 0, 0.808); /*ok*/
+    /* colocou um justify content center */
+    position: fixed; /*nao colocou*/
+    height: auto; /*nao colocou*/
+    width: 100%; /*nao colocou*/
 }
 
 #container{
@@ -41,6 +46,10 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: #20B955;
 }
 
 main{
